@@ -1,0 +1,75 @@
+/* src/Components/Navbar/Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px #000;
+    margin-bottom: 1px;
+    background: white;
+}
+
+.nav-logo {
+    width: 200px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between links */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #6079ff; /* Change this to your desired link color */
+    font-weight: bold;
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Styles for the Login Button */
+.login-btn {
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.login-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Styles for the Logout Button */
+.logout-btn {
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+.navprofile {
+    width: 75px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: flex-start; /* Align links to the start */
+        gap: 10px; /* Space between links */
+    }
+}
