@@ -8,6 +8,16 @@ const cors = require("cors");
 const { type } = require("os");
 const { error, log } = require("console");
 
+const cloudinary = require('cloudinary');
+
+cloudinary.v2.config({
+  cloud_name: 'dpvb6vm3r',
+  api_key: '477576684453173',
+  api_secret: '<your_api_secret>',
+  secure: true,
+});
+
+
 const app = express();
 
 app.use(express.json());
